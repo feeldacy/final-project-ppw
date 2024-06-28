@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.banner-bg{
+    height: 60vh;
+    width: auto;
+    background: url(am-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about {
+    text-align: center;
+    padding: 20px 150px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+main h1{
+    text-align: center;
+    font-weight: 800;
+
+}
+
+.nav-item a{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+
+.album-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    width: 95%;
+    max-width: 1200px;
+}
+
+.album-gallery .card {
+    max-width: 250px;
+    display: flex;
+    flex: 1 1 270px;
+}
+
+.most-listened {
+    background-image: url(am-bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.most-listened h6 {
+    text-align: center;
+    font-weight: 700;
+}
+
+.glass-effect{
+    margin-top: 20vh;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(5px);
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.song-list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.album-cv img{
+    width: 70%;
+}
+
+.song-list h2{
+    font-weight: 700;
+}
+
+.song-list h4{
+    font-weight: 400;
+}
+
+.song-list .info{
+    color: white;
+}
+
+.info p{
+    font-size: 15px;
+}
+
+.platform {
+    margin-top: 80px;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+}
+
+.platform h1{
+    margin-bottom: 40px;
+}
+
+.socials ul, .footer-menu ul{
+    margin-top: 30px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials a{
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.socials li{
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-menu {
+    background: white;
+    padding: 10px;
+}
+
+.footer-menu a {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.footer-menu ul {
+    justify-content: space-evenly;
+}
+
+@media (max-width: 500px) {
+    .song-list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .song-list .info{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .song-list img{
+        margin-bottom: 20px;
+    }
+
+    .album-gallery {
+        justify-content: center;
+    }
+
+    .about {
+        padding: 10%;
+    }
+}
